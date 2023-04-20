@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Esp config page</title>
+  </head>
+  <body>
+    <div class="MainBlock">
+      <header>
+        <!-- INFO -->
+        <form action="/SetWifiData" style="background-color: #ffcdcd">
+          Target wifi SSID: <input type="text" name="input1" /> <br />
+          Target wifi Password: <input type="password" name="input2" /> <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </header>
+      <div class="Content" style="background-color: #c5ffb7">
+        <form action="/ClearData">
+          <input type="submit" value="Clear Wifi Config" CLEAR_DATA_DISABLED />
+        </form>
+      </div>
+      <footer style="background-color: #a7f5ff">
+        <form action="/restart">
+          <input type="submit" value="Restart" />
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>
